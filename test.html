@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content Type" content="text/html" charset="UTF-8" />
+	
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 800px)" href="styles800.css"/>
+	<script type="text/javascript" src="test.js" charset="utf-8"></script>
+</head>
+
+
+<body>
+	<h3>Реверси</h3>
+	<canvas id="chesstable"></canvas>
+	<div class="menu">
+		<div class="menu-interface">
+		<div id="new-game" class="menu-button">Новая игра</div>
+		<input type="radio" name="choose-mode" id="vsplayer" class="form-check-input">
+		<label for="vsplayer" id="vsplayer-label" class="form-check-label">против игрока</label><br>
+		<input type="radio" name="choose-mode" id="vsai" class="form-check-input" checked>
+		<label for="vscomputer" id="vsai-label" class="form-check-label">против ИИ</label>
+		<div id="skip-turn" class="menu-button">Передать ход</div>
+		<div id="prev-turn" class="menu-button">Пред. ход</div>
+		</div>
+		<div class="menu-info">
+		<div id="current-player-wrapper"><span>Ход:</span><div class="circle current-player-color"></div></div>
+		<div id="scores-info">Счет:</div>
+		<table id="scores">
+		<tr><td><div class="circle green"></div></td><td><div class="circle blue"></div></td></tr>
+		<tr><td><span id="count1">2</span></td><td><span id="count2">2</span></td></tr>
+		</table>
+		<div id="winner"><span>Ничья</span><div class="circle current-player-color green"></div></div>
+		</div>
+	</div>
+</body>
+</html>
