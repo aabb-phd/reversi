@@ -1,6 +1,6 @@
 "use strict";
 
-alert(document.documentElement.clientHeight);
+
 window.onload = function() {
 	let chessTable = document.getElementById("chesstable");
 	let context = chessTable.getContext("2d");
