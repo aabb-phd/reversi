@@ -1,0 +1,13 @@
+.menu {
+	width: 400px;
+	height: 220px;
+	margin: 20px 0 0 0;
+	clear: both;
+}
+
+.menu-interface { float: left; }
+
+.menu-info {
+	margin-top: -12px;
+	float: right;
+}
