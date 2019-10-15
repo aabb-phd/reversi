@@ -43,7 +43,7 @@ h3 {
 .underlined { border-bottom: 1px black solid; }
 
 #skip-turn { margin: 8px 0; }
-.disabled { background: #e4e1e1 !important; }
+.disabled { background: #a2a2a2 !important; }
 
 .circle {
 	width: 24px;
