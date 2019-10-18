@@ -48,11 +48,6 @@ function checkAiTurn() {
 	checkScores();
 	checkTurnsCount(A, 1);
 	checkTurnsCount(A, 2);
-
-	console.log(turnCount1, turnCount2);
-	console.log(minTurnsHeuristic(A));
-	console.log(newCheckersHeuristic(A));
-
 	if (!turnCount1 && !turnCount2) gameOver = true;
 	if (gameOver) checkWinner();
 	whosTurn();
