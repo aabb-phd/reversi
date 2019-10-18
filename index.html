@@ -6,11 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="styles.css"/>
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="styles600.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=0.7"/>
-	<script type="text/javascript" src="test.js" charset="utf-8"></script>
 </head>
 
 
 <body>
+<main>
 	<h3>Реверси</h3>
 	<canvas id="chesstable"></canvas>
 	<div class="menu">
@@ -19,7 +19,7 @@
 		<input type="radio" name="choose-mode" id="vsplayer" class="form-check-input">
 		<label for="vsplayer" id="vsplayer-label" class="form-check-label">против игрока</label><br>
 		<input type="radio" name="choose-mode" id="vsai" class="form-check-input" checked>
-		<label for="vscomputer" id="vsai-label" class="form-check-label">против ИИ</label>
+		<label for="vsai" id="vsai-label" class="form-check-label">против ИИ</label>
 		<div id="skip-turn" class="menu-button">Передать ход</div>
 		<div id="prev-turn" class="menu-button">Пред. ход</div>
 		</div>
@@ -33,5 +33,13 @@
 		<div id="winner"><span>Ничья</span><div class="circle current-player-color green"></div></div>
 		</div>
 	</div>
+</main>
+	<script type="text/javascript" src="draw.js" charset="utf-8"></script>	
+	<script type="text/javascript" src="interface.js" charset="utf-8"></script>	
+	<script type="text/javascript" src="game_methods.js" charset="utf-8"></script>	
+	<script type="text/javascript" src="heuristic_function.js" charset="utf-8"></script>
+	<script type="text/javascript" src="player_turn.js" charset="utf-8"></script>	
+	<script type="text/javascript" src="ai_turn.js" charset="utf-8"></script>	
+	<script type="text/javascript" src="game.js" charset="utf-8"></script>	
 </body>
 </html>
